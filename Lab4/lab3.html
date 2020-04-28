@@ -27,11 +27,13 @@
       			var material = new THREE.MeshPhongMaterial({map: texture, normalMap: normMap});
       			var cube = new THREE.Mesh(geometry, material);
      			scene.add(cube);
+				cube.position.y -= 2;
 				
       			var material = new THREE.MeshPhongMaterial( { map: texture } );
 				var cube2 = new THREE.Mesh(geometry, material);
 				scene.add(cube2);
 				cube2.position.x -= 2;
+				cube2.position.y -= 2;
 				
 				var texture = THREE.ImageUtils.loadTexture("156.jpg");
 				var normMap = THREE.ImageUtils.loadTexture("156_norm.jpg");
@@ -39,6 +41,7 @@
 				var cube3 = new THREE.Mesh(geometry, material);
 				scene.add(cube3);
 				cube3.position.x += 2;
+				cube3.position.y -= 2;
 
 
 			// add the light
@@ -49,11 +52,9 @@
 				var geometry1, material1, mesh1;
 
 			function addTextureShaderCube() {
-			if(count == 2) {
-				let uniforms = {
-        			colorB: {type: 'vec3', value: new THREE.Color(0xACB6E5)},
-        			colorA: {type: 'vec3', value: new THREE.Color(0x74ebd5)}
-        		};
+			if(count >= 2) {
+				var uniforms = {texture1: { type: "t", value: 
+					THREE.ImageUtils.loadTexture("156.jpg")}};
 	
       			geometry1 = new THREE.BoxGeometry(1, 1, 1);
       			material1 =  new THREE.ShaderMaterial({
@@ -63,8 +64,10 @@
       				precision: "mediump"});
 
       			mesh1 = new THREE.Mesh(geometry1, material1);
-      			mesh1.position.x = 2;
+      			mesh1.position.x = 5;
       			scene.add(mesh1);
+				mesh1.position.x -= count * 2;
+
     		}
 }
 
@@ -90,7 +93,7 @@
       				console.error('An error happened');
       			});
 
-				loader.load('shaders/fragmentShader.frag',
+			loader.load('shaders/fragmentShader.frag',
       			// onLoad callback
       			function (data) {
       				console.log(data); // output the text to the console
@@ -98,6 +101,26 @@
       				count += 1;
       				addTextureShaderCube(); // we will write this method
       			},
+
+      			// onProgress callback
+      			function (xhr) {
+      				console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
+      			},
+				// onError callback
+      			function (err) {
+      				console.error('An error happened');
+      			}
+			);
+
+			loader.load('shaders/myFragmentShader.frag',
+      			// onLoad callback
+      			function (data) {
+      				console.log(data); // output the text to the console
+      				fshader = data;
+      				count += 1;
+      				addTextureShaderCube(); // we will write this method
+      			},
+
       			// onProgress callback
       			function (xhr) {
       				console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
