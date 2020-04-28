@@ -13,7 +13,8 @@ The two cubes on the far right are using fragment shaders.
   - the one on top is my shader, it hard cuts between different colors depending on the position of the pixel, it's decided by a chain of ifs.
   - the one on the bottom is using the shader from the tutorial, I only changed the colors
 
-Lab 4 - 
+Lab 4 - https://drive.google.com/open?id=1w--Ka9igTD6xp0TjlD2WUenKjspdIffD
+Video: bottom row is part 1, top two are part 2, the cube on the top left is tiled
 Part 1:
   What is a formula to get the x coordinate of the texture given a u value of the uv coordinate (a value between 0 and 1)?
   
