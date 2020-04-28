@@ -31,3 +31,9 @@ Part 1:
   What color is sampled from the texture at the uv coordinate (0.375, 0.25)?
   
   The color is white
+
+Part 2:
+This code makes a new vec2 that will sample the whole texture over uv values (0,0) to (0.5,0.5), then start over thus tiling. I use tiledUv instead of vUv.
+vec2 tiledUv;
+	tiledUv.x = mod(vUv.x, 0.5) * 2.0;
+	tiledUv.y = mod(vUv.y, 0.5) * 2.0;
