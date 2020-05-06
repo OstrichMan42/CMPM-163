@@ -40,5 +40,5 @@ vec2 tiledUv;
 	tiledUv.x = mod(vUv.x, 0.5) * 2.0;
 	tiledUv.y = mod(vUv.y, 0.5) * 2.0;
 	
-# Lab 5 - 
+# Lab 5 - https://drive.google.com/open?id=1uzfL847hvurWRQMt5TgZgROr39hJ947u
 The particle is very similar to the one from the tutorial, the color is changed but the sprite is the same, only some minor tweaks otherwise. I added four boxes around the track that when entered, rotates the sun around the map, and rotates the directional light, it's a little buggy, I'm still learning about quaternions as rotation. Lastly I tweaked the material for the sun by swapping the albedo for an emmision texture, I think it works pretty well.
