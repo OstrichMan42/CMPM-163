@@ -45,10 +45,10 @@ The particle is very similar to the one from the tutorial, the color is changed 
 
 # Lab 6 - 
 A directional light behaves like the sun, it shines on everything no matter where it is, the angle that it shines can be changed.
-A spot light points like a flashlight, it shines in a direction from a point, the angle of its cone of light can be changed.
-A point light behaves like a lightbulb, it shines in all directions from its position.
-An area light is confusing, it shines from an area, only works with baked lighting, and requires light probes, in my scene the area light behaves weird.
+A spot light points like a flashlight, it shines in a direction from a point, the angle of its cone of light can be changed. the one in my scene is green, and moves.
+A point light behaves like a lightbulb, it shines in all directions from its position. Mine is in the top right of the scene, it's blue
+An area light is confusing, it shines from an area, only works with baked lighting, and requires light probes, in my scene the area light behaves weird, it is on the floor in the corner, its color is blue.
 
-
+I got the image textures from here - opengameart.org. I used marble and stacked stone.
 
 My skybox uses Unity's procedural skybox, I changed the colors of the atmosphere and ground, and removed the sun.
