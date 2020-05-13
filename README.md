@@ -43,7 +43,8 @@ vec2 tiledUv;
 # Lab 5 - https://drive.google.com/open?id=1uzfL847hvurWRQMt5TgZgROr39hJ947u
 The particle is very similar to the one from the tutorial, the color is changed but the sprite is the same, only some minor tweaks otherwise. I added four boxes around the track that when entered, rotates the sun around the map, and rotates the directional light, it's a little buggy, I'm still learning about quaternions as rotation. Lastly I tweaked the material for the sun by swapping the albedo for an emmision texture, I think it works pretty well.
 
-# Lab 6 - 
+# Lab 6 - no video
+![](images/Lab6Scene.PNG)
 A directional light behaves like the sun, it shines on everything no matter where it is, the angle that it shines can be changed.
 A spot light points like a flashlight, it shines in a direction from a point, the angle of its cone of light can be changed. the one in my scene is green, and moves.
 A point light behaves like a lightbulb, it shines in all directions from its position. Mine is in the top right of the scene, it's blue
