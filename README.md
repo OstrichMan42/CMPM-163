@@ -53,7 +53,7 @@ A point light behaves like a lightbulb, it shines in all directions from its pos
 
 An area light is confusing, it shines from an area, only works with baked lighting, and requires light probes, in my scene the area light behaves weird, it is on the floor in the corner, its color is blue.
 
-I made a texture to mimic my housemate's waterbottle ![](images/Bottle.jpg) ![](images/Lab6Mat.PNG)
+I made a texture to mimic my housemate's waterbottle (I don't know how to shrink the image, sorry!) ![](images/Bottle.jpg) ![](images/Lab6Mat.PNG)
 
 I got the image textures from here - opengameart.org. I used marble and stacked stone.
 
