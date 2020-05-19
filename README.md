@@ -58,3 +58,13 @@ I made a texture to mimic my housemate's waterbottle (I don't know how to shrink
 I got the image textures from here - opengameart.org. I used marble and stacked stone.
 
 My skybox uses Unity's procedural skybox, I changed the colors of the atmosphere and ground, and removed the sun.
+
+# Lab 7 - https://drive.google.com/open?id=1L2Q0ZW_oHPK8av0JoE9x2RErfeUkle9j
+I did part 1
+The mountain was made with the mountain shadergraph from the tutorial, I cubed the noise to make it steeper, though a plane with more verticies would've probably looked better. I also added a green-grey gradient that changes with the vertex's y coordinate
+
+The waves are using the wave shader code.
+
+The wiggling ball was made with a shader graph I made based off of the mountain graph. Originally it was meant to make waves. I used voronoi noise and scrolled it across the ball. The same could be done to a plane to make waves, but I changed the sun a bit so it was not moving in waves across one axis. I put a point light inside of it that is a similar color.
+
+The skybox was a unity procedural skybox.
