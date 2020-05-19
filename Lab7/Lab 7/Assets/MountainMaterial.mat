@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VertexDisplacementMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 5b3be664a3b01774293cfbbd645b7e78,
+  m_Name: MountainMaterial
+  m_Shader: {fileID: -6465566751694194690, guid: 6648eaf4c73aee24ca493775b698158b,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
