@@ -60,7 +60,10 @@ I got the image textures from here - opengameart.org. I used marble and stacked 
 My skybox uses Unity's procedural skybox, I changed the colors of the atmosphere and ground, and removed the sun.
 
 # Lab 7 - https://drive.google.com/open?id=1L2Q0ZW_oHPK8av0JoE9x2RErfeUkle9j
-I did part 1
+I did part 1. I didn't work with my partner, they made a mountain-island with a river and some trees, their mountain looks like one tall spire.
+
+My scene has a mountain range with lakes, and a wiggling ball.
+
 The mountain was made with the mountain shadergraph from the tutorial, I cubed the noise to make it steeper, though a plane with more verticies would've probably looked better. I also added a green-grey gradient that changes with the vertex's y coordinate
 
 The waves are using the wave shader code.
