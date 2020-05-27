@@ -43,7 +43,7 @@ vec2 tiledUv;
 # Lab 5 - https://drive.google.com/open?id=1uzfL847hvurWRQMt5TgZgROr39hJ947u
 The particle is very similar to the one from the tutorial, the color is changed but the sprite is the same, only some minor tweaks otherwise. I added four boxes around the track that when entered, rotates the sun around the map, and rotates the directional light, it's a little buggy, I'm still learning about quaternions as rotation. Lastly I tweaked the material for the sun by swapping the albedo for an emmision texture, I think it works pretty well.
 
-# Lab 6 - no video
+# Lab 6 
 ![](images/Lab6Scene.PNG)
 A directional light behaves like the sun, it shines on everything no matter where it is, the angle that it shines can be changed.
 
@@ -71,3 +71,7 @@ The waves are using the wave shader code.
 The wiggling ball was made with a shader graph I made based off of the mountain graph. Originally it was meant to make waves. I used voronoi noise and scrolled it across the ball. The same could be done to a plane to make waves, but I changed the sun a bit so it was not moving in waves across one axis. I put a point light inside of it that is a similar color.
 
 The skybox was a unity procedural skybox.
+
+# Lab 8 
+![](images/newyork.jpg) ![](images/MyYork.PNG)
+My city uses the same assets from the tutorial, and I found a grass and water texture online. New York is densley packed and the tutorial made something dense. I tried to make the water use my water shader from Lab 7 and add motion, but I couldn't get it to work. I kinda didn't know what to do for this project.
