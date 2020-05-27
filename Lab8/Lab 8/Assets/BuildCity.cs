@@ -21,12 +21,12 @@ public class BuildCity : MonoBehaviour
                 int i;
 
                 if (result < 30) i = 0;
-                else if (result < 35) i = 1;
-                else if (result < 45) i = 6;
-                else if (result < 57) i = 5;
-                else if (result < 70) i = 4;
-                else if (result < 84) i = 3;
-                else if (result < 90) i = 2;
+                else if (result < 32) i = 1;
+                else if (result < 43) i = 6;
+                else if (result < 50) i = 5;
+                else if (result < 55) i = 4;
+                else if (result < 64) i = 3;
+                else if (result < 70) i = 2;
                 else i = 1;
 
                 Instantiate(buildings[i], pos, Quaternion.identity);
