@@ -77,5 +77,5 @@ The skybox was a unity procedural skybox.
 My city uses the same assets from the tutorial, and I found a grass and water texture online. New York is densley packed and the tutorial made something dense. I tried to make the water use my water shader from Lab 7 and add motion, but I couldn't get it to work. I kinda didn't know what to do for this project.
 
 # Lab 9
-![](images/L-System.jpg) ![](images/L-SystemTutorial.jpg)
+![](images/L-System.PNG) ![](images/L-SystemTutorial.PNG)
 I made my L-System from the tutorial, he had a problem that the angle wasn't working so I tried making it negative and that worked. I wanted the line so slowly draw itself and not pop in at all, my logic for that is in lines 90-100.
