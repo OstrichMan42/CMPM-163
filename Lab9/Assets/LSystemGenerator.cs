@@ -52,7 +52,7 @@ public class LSystemGenerator : MonoBehaviour
                 count++;
                 length /= 2;
 
-                transform.Translate(Vector3.up);
+                transform.Translate(Vector3.up * 0.25f);
 
             } else{
                 yield return null;
@@ -93,9 +93,12 @@ public class LSystemGenerator : MonoBehaviour
                 while (moved < length)
                 {
                     Vector3 initialPosition = transform.position;
-                    transform.Translate(Vector3.forward * Time.deltaTime);
-                    moved += Time.deltaTime;
-                    Debug.DrawLine(initialPosition, transform.position, Color.white, 10000f, false);
+
+                    if (Time.deltaTime * 2 > length - moved) transform.Translate(Vector3.forward * (length - moved));
+                    else transform.Translate(Vector3.forward * 2 * Time.deltaTime);
+
+                    moved += Time.deltaTime * 2;
+                    Debug.DrawLine(initialPosition, transform.position, Color.yellow, 10000f, false);
                     yield return null;
                 }
             }
