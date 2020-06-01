@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class LSystemGenerator : MonoBehaviour
 {
-    /*
     private string axiom = "F-G-G";
     private string lSystemString;
     private float length = 1;
     private float angle = -120;
-    */
 
+    /*
     private string axiom = "F";
     private string lSystemString;
     private float length = 1;
     private float angle = 25;
-    
+    */
 
     private Dictionary<char, string> rules = new Dictionary<char, string>();
     private Stack<TransformInfo> transformStack = new Stack<TransformInfo>();
@@ -24,10 +23,10 @@ public class LSystemGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rules.Add('F', "FF+[+F-F-F]-[-F+F+F]");
+        //rules.Add('F', "FF+[+F-F-F]-[-F+F+F]");
 
-        //rules.Add('G', "GG");
-        //rules.Add('F', "F-G+F+G-F");
+        rules.Add('G', "GG");
+        rules.Add('F', "F-G+F+G-F");
 
         lSystemString = axiom;
 
@@ -53,7 +52,7 @@ public class LSystemGenerator : MonoBehaviour
                 count++;
                 length /= 2;
 
-                //transform.Translate(Vector3.up * 0.25f);
+                transform.Translate(Vector3.up * 0.25f);
 
             } else{
                 yield return null;
@@ -99,7 +98,7 @@ public class LSystemGenerator : MonoBehaviour
                     else transform.Translate(Vector3.forward * 2 * Time.deltaTime);
 
                     moved += Time.deltaTime * 2;
-                    Debug.DrawLine(initialPosition, transform.position, Color.white, 10000f, false);
+                    Debug.DrawLine(initialPosition, transform.position, Color.yellow, 10000f, false);
                     yield return null;
                 }
             }
