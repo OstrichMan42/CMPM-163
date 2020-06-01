@@ -78,4 +78,4 @@ My city uses the same assets from the tutorial, and I found a grass and water te
 
 # Lab 9
 ![](images/L-System.PNG) ![](images/L-SystemTutorial.PNG)
-I made my L-System from the tutorial, he had a problem that the angle wasn't working so I tried making it negative and that worked. I wanted the line so slowly draw itself and not pop in at all, my logic for that is in lines 90-100.
+I made my L-System from the tutorial, he had a problem that the angle wasn't working so I tried making it negative and that worked. I made the line slowly draw itself and not pop in at all, it casued some bugs that I fixed, my logic for that is in lines 90-100.
